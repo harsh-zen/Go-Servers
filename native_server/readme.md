@@ -87,6 +87,3 @@ To compare response sizes, you can use the following commands:
     curl -s -o /dev/null -w "%{size_download}\n" http://localhost:8000/api/v2/appointments
     ```
 
-## License
-
-This project is licensed under the MIT License.
