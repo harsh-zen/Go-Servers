@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package appointment;
+
+option go_package = "/protos;appointment";
+
+import "google/protobuf/timestamp.proto";
+
+message Appointment {
+
+    int32 id = 1;
+    string title = 2;
+    google.protobuf.Timestamp startTime = 3;
+    google.protobuf.Timestamp endTime = 4;
+}
+
+message AppointmentList {
+    repeated Appointment appointments = 1;
+}
+
